@@ -11,69 +11,72 @@
     <body>
         <header>
             <nav>
-                <span>ballecoffe</span>
-                <ul>
+                <span class="logo">ballecoffe</span>
+                <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Receitas</a></li>
                     <li><a href="#">Novidades</a></li>
                     <li><a href="#">Melhor avaliados</a></li>
                 </ul>
-                <a href="#">Github</a>
+                <a class="github" href="#">Github</a>
             </nav>
         </header>
         
         <main>
-            <section>
-                <header>
-                    <span>Novidade</span>
-                    <h1>Encontre a receita perfeita!</h1>
-                    <hr/>
-                    <h2>Explore dezenas de variações da bebida favorita entre os devs ao redor mundo!</h2>
-                </header>
-                <div>
-                    <figure>
-                        <img src="assets/images/image 7.png" />
-                        <img src="assets/images/image 8.png" />
-                        <img src="assets/images/image 9.png" />
-                        <img src="assets/images/image 10.png" />
-                        <img src="assets/images/image 11.png" />
-                        <img src="assets/images/image 12.png" />
-                        <img src="assets/images/image 13.png" />
-                        <img src="assets/images/image 14.png" />
-                        <img src="assets/images/image 15.png" />
-                        <img src="assets/images/image 16.png" />
-                        <img src="assets/images/image 17.png" />
-                        <img src="assets/images/image 18.png" />
-                    </figure>
+            <div class="principal">
+                <section class="hero">
+                    <header class="hero-conteudo">
+                        <span class="destaque marron">Novidade</span>
+                        <h1>Encontre a receita perfeita!</h1>
+                        <hr/>
+                        <h2 class="hero-subtitulo">Explore dezenas de variações da bebida favorita entre os devs ao redor mundo!</h2>
+                    </header>
+                    <div class="hero-imagens-container">
+                        <figure>
+                            <img src="assets/images/image 7.png" />
+                            <img src="assets/images/image 8.png" />
+                            <img src="assets/images/image 9.png" />
+                            <img src="assets/images/image 10.png" />
+                            <img src="assets/images/image 11.png" />
+                            <img src="assets/images/image 12.png" />
+                            <img src="assets/images/image 13.png" />
+                            <img src="assets/images/image 14.png" />
+                            <img src="assets/images/image 15.png" />
+                            <img src="assets/images/image 16.png" />
+                            <img src="assets/images/image 17.png" />
+                            <img src="assets/images/image 18.png" />
+                        </figure>
 
-                </div>
-            </section>
+                    </div>
+                </section>
+            </div>
 
-            <section>
-                <button>
-                    <img src="assets/images/Button.svg" />
+            <section class="botao-container">
+                <button type="button">
+                    <img src="assets/images/chevrons-down.svg" />
                 </button>
             </section>
 
-            <section>
-                <header>
-                    <span>receitas</span>
-                    <h2>Confira as útlimas receitas</h2>
-                    <p>Dê uma olhada nas receitas mais amadas!</p>
+            <section class="receitas">
+                
+                <header class="receitas-cabecalho">
+                    <span class="destaque marron">receitas</span>
+                    <h2 class="receitas-titulo">Confira as útlimas receitas</h2>
+                    <p class="receitas-subtitulo">Dê uma olhada nas receitas mais amadas!</p>
                 </header>
-                <div>
-                    <div>
-                        <header>
-                            <div>
-                                <span>em alta 🔥</span>
-                                <h3>Capucciono</h3>
+                <div class="receitas-card-container">
+                    <div class="receitas-card">
+                        <header class="receitas-card-cabecalho">
+                            <div class="receitas-card-cabecalho-detalhes">
+                                <span class="destaque amarelo">em alta 🔥</span>
+                                <h3 class="receita-titulo">Capucciono</h3>
                             </div>
-                            <p>Extraordinário - 4/4</p>
+                            <p class="receita-avaliacao">Extraordinário - 4/4</p>
                         </header>
-                        <p>Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
-                        <div>
+                        <p class="receita-descricao">Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
+                        <div class="receita-autor">
                             <img src="https://avatars.githubusercontent.com/u/54322854?v=4"/>
-                            <span>Rafaella Ballerini</span>
+                            <span class="receita-autor-nome">Rafaella Ballerini</span>
                         </div>
                     </div>
                 </div>
@@ -81,46 +84,8 @@
         </main>
         
         <footer>
-            <p>Copyright &lt;CODEFEE /&gt; 2023</p>
-            <p>Feito com muito 🖤 e café por <a>Rafaela Ballerini</a></p>
+            <p class="footer-copy">Copyright &lt;CODEFEE /&gt; 2023</p>
+            <p class="footer-autor">Feito com muito 🖤 e café por <a>Rafaela Ballerini</a></p>
         </footer>
-    <!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-</body>
+    </body>
 </html>
